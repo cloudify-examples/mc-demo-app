@@ -11,6 +11,14 @@ inputs:
     description: >
       Name of certified blueprint to deploy.
     type: string
+    constraints:
+      - valid_values:
+          - nodejs-aws-tf
+          - nodejs-aws-vm
+          - nodejs-azure-appservice
+          - nodejs-azure-vm
+          - nodejs-azure-vm-arm
+          - nodejs-openstack
 
   infra_inputs:
     description: >
