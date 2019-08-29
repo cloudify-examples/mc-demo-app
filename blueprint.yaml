@@ -9,20 +9,20 @@ imports:
 inputs:
   infra_blueprint:
     description: >
-      Name of certified blueprint to deploy.
+      Name of infrastructure blueprint to deploy.
     type: string
     constraints:
       - valid_values:
-          - nodejs-aws-tf
-          - nodejs-aws-vm
-          - nodejs-azure-appservice
-          - nodejs-azure-vm
-          - nodejs-azure-vm-arm
-          - nodejs-openstack
+          - mc-demo-nodejs-aws-tf
+          - mc-demo-nodejs-aws-vm
+          - mc-demo-nodejs-azure-appservice
+          - mc-demo-nodejs-azure-vm
+          - mc-demo-nodejs-azure-vm-arm
+          - mc-demo-nodejs-openstack
 
   infra_inputs:
     description: >
-      Inputs that will be passed on to the certified blueprint.
+      Inputs that will be passed on to the infrastructure blueprint.
     default: {}
 
   app_content:
