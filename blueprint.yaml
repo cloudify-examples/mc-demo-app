@@ -53,7 +53,7 @@ node_templates:
             endpoint: { get_capability: [ { get_attribute: [ nodejs_environment, deployment, id ] }, endpoint ] }
             resource_path: { get_input: app_content }
     relationships:
-      - type: cloudify.relationships.connected_to
+      - type: cloudify.relationships.contained_in
         target: nodejs_environment
 
 outputs:
